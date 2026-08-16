@@ -25,11 +25,22 @@
 # else:
 #     print("c is the greater number", c)
 
-units = int(input("Enter the units you consumed:"))
-if(units <= 100):
-    bill1 = units * 5
-elif(units>100 and units<=200):
-    bill2 = (units * 5) + ((units - 100) * 7)
+# units = int(input("Enter the units you consumed:"))
+# if(units <= 100):
+#     bill = units * 5
+# elif(units<=200):
+#     bill = (100 * 5) + ((units - 100) * 7)
+# else:
+#     bill = (100*5) + (100*7) + (units - 200) * 10
+# print ("total bill is:", bill)         
+
+
+a = int(input("Enter a side 1:"))
+b = int(input("Enter a side 2:"))
+c = int(input("Enter a side 3:"))
+
+if(a+b>c and b+c>a and a+c>b):
+    print("Valid triangle")
 else:
-    bill3 = units * 10
-print ("total bill is:", bill1 + bill2 + bill3)         
+    print("invalid triangle")
+
